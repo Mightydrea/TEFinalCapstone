@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compaible" content="ie=edge" />
+        <title>Clickable Map</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="map-container">
+            <img src="columbusMap.png" usemap="#image-map">
+            
+            <map name="image-map" id="map">
+                <area target="" alt="North" title="North" href="localhost:8080/capstone/filterPositions?north" coords="314,347,316,346,468,0,187,0,293,290,315,346,315,345" shape="poly">
+                <area target="" alt="South" title="South" href="localhost:8080/capstone/filterPositions?south" coords="317,346,436,606,255,606,205,607,314,346,317,348,317,347,317,348,318,347,317,346,318,347,317,350" shape="poly">
+                <area target="" alt="East" title="East" href="localhost:8080/capstone/filterPositions?east" coords="666,219,315,346,666,461,666,435,666,335,666,331,666,335" shape="poly">
+                <area target="" alt="West" title="West" href="localhost:8080/capstone/filterPositions?west" coords="315,345,0,438,0,221" shape="poly">
+                <area target="" alt="North West" title="Northwest" href="localhost:8080/capstone/filterPositions?northwest" coords="186,0,1,1,1,220,314,345" shape="poly">
+                <area target="" alt="North East" title="Northeast" href="localhost:8080/capstone/filterPositions?northeast" coords="318,343,666,219,663,1,469,0" shape="poly">
+                <area target="" alt="South West" title="Southwest" href="localhost:8080/capstone/filterPositions?southwest" coords="313,347,204,606,0,606,0,438" shape="poly">
+                <area target="" alt="South East" title="Southeast" href="localhost:8080/capstone/filterPositions?southeast" coords="318,347,438,607,665,605,666,460" shape="poly">
+            </map>
+        
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
